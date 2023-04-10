@@ -93,14 +93,11 @@ body{
 }
 
 div{
-  padding: 5%;
+  padding: 2%;
   border: #f83205 solid 1px;
   background-color: rgb(24, 0, 0);
   margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: rgb(255, 0, 0) 0px 2px 8px 0px inset;
-  /* box-shadow: 10px -8px 10px 6px rgb(251, 2, 2); */
   border-radius: 10px;
 }
 
@@ -130,7 +127,7 @@ h4{
 
 p{
   font-family: 'Quicksand', sans-serif;
-  color: gray;;
+  color: gray;
   font-weight: bold;
 }
 
@@ -176,18 +173,12 @@ img{
   max-height: 100%;
   padding: 0px;
   margin: 0px;
-  padding: 0px;
   border-radius: 10px;
 }
 
-iframe {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 #bioPic{
-  padding: 5%;
+  padding: 2%;
   border-radius: 10px;
 }
 
@@ -209,7 +200,6 @@ iframe {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
   width: 90%;
 }
 
@@ -218,12 +208,19 @@ iframe {
   min-width: 100%;
   min-height: auto;
 }
-/* 
-.glamShot{
-  width: 100%;
+#contact{
   height: auto;
-    min-height: 100%;
-} */
+  margin-top: 3%;
+}
+
+#blog{
+  padding: 2%; 
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgb(255, 0, 0) 0px 2px 8px 0px inset;
+  border-radius: 10px;
+}
 
 #contact-links{
   display: flex;
@@ -235,6 +232,9 @@ iframe {
 a:hover{
 filter: brightness(200%);
 transition: 0.5s;
+}
+.gallery{
+  margin-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -345,7 +345,7 @@ transition: 0.5s;
 .container{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   padding: 5%;
   margin-left:  3%;
   margin-right: 3%;
@@ -383,7 +383,6 @@ transition: 0.5s;
   grid-row-end: 4;
 }
 
-
 #head_shot{
   float: left;
   width: 50%;
@@ -396,28 +395,13 @@ transition: 0.5s;
   margin-bottom: 15px;
 }
 
-
 .acting{
-  width: 90%;
   grid-column: 3/4;
-  /* grid-column-start: 2;
-  grid-column-end: 4; */
   grid-row-start: 2;
-  grid-row-end: 4; 
-
-
-}
-/* 
-.writing{
-  width: 90%;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3; */
+  grid-row-end: 4;
 }
 
 .gallery{
-  width: 90%;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 4;
@@ -425,29 +409,25 @@ transition: 0.5s;
 }
 
 #blog{
-  width: 90%;
+  width: 95%;
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 2;
   grid-row-start: 5;
-  grid-row-end: 6;
-  padding: 5%; 
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgb(255, 0, 0) 0px 2px 8px 0px inset;
-  border-radius: 10px;
-
+  grid-row-end: 7;
 }
 
 #contact{
+  padding: 2%; 
   width: 90%;
   height: auto;
-  grid-column-start: 1;
+  margin-top:0;
+  grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 7;
+  grid-row-start: 5;
   grid-row-end: 7;
 }
 .contactItems{
-font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 .toTop{
@@ -501,10 +481,6 @@ font-size: 1.75em;
   grid-row-start: 2;
   grid-row-end: 2;
 }
-
-
-}
-
 
 
 
